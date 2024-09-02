@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Cherries : MonoBehaviour
 {
+    public int score = 10;
     private SpriteRenderer sr;
     private CircleCollider2D circle;
 
@@ -29,6 +30,8 @@ public class Cherries : MonoBehaviour
             sr.enabled = false;
             circle.enabled = false;
             collected.SetActive(true);
+
+            GameController.instance.totalScore += score;
             
             Destroy(gameObject, 0.25f);
         }
