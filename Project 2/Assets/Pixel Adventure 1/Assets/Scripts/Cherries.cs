@@ -32,6 +32,7 @@ public class Cherries : MonoBehaviour
             collected.SetActive(true);
 
             GameController.instance.totalScore += score;
+            GameController.instance.UpdateScoreText();
             
             Destroy(gameObject, 0.25f);
         }

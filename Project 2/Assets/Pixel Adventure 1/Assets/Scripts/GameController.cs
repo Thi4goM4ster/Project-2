@@ -8,13 +8,10 @@ public class GameController : MonoBehaviour
 {
 
     public int totalScore;
-    public Text scoreText;
-
-    private string nome = "wenes";
 
     public static GameController instance;
 
-    public TMP_Text ScoreText;
+    public TMP_Text scoreText;
     
     // Start is called before the first frame update
     void Start()
